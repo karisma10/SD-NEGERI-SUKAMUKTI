@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profil Sekolah | SD Negeri Sukamukti</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f9f9f9;
+    }
+
+    /* Rapiin teks navbar */
+    .navbar-nav .nav-link {
+      font-weight: 500;
+      letter-spacing: 0.3px;
+      text-transform: capitalize;
+      padding: 10px 15px;
+      color: #fff !important;
+    }
+
+    .navbar-nav .nav-link:hover,
+    .navbar-nav .nav-link.active {
+      background-color: rgba(255, 255, 255, 0.2);
+      border-radius: 8px;
+      transition: 0.3s;
+    }
+
+    p {
+      text-align: justify;
+      line-height: 1.8;
+      margin-bottom: 15px;
+    }
+
+    /* Tabel agar kolomnya sama besar dan rapi */
+    table {
+      table-layout: fixed;
+      width: 100%;
+    }
+
+    th, td {
+      width: 50%;
+      text-align: center;
+      vertical-align: middle;
+      word-wrap: break-word;
+    }
+
+    th {
+      background-color: #003366;
+      color: white;
+    }
+
+    /* Foto di tengah dan ukuran lebih kecil */
+    .profil-foto {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 30px;
+    }
+
+    .profil-foto img {
+      width: 50%;
+      max-width: 500px;
+      height: auto;
+      border-radius: 15px;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .profil-foto img:hover {
+      transform: scale(1.03);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    /* Footer di tengah sempurna */
+    footer {
+      background: #003366;
+      color: white;
+      height: 70px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    footer p {
+      margin: 0;
+      font-size: 15px;
+      letter-spacing: 0.3px;
+    }
+
+    /* Responsif: kalau di HP, foto otomatis lebih lebar sedikit */
+    @media (max-width: 768px) {
+      .profil-foto img {
+        width: 80%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-uppercase" href="index.html">SD Negeri Sukamukti</a>
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="nav">
+        <ul class="navbar-nav align-items-center">
+          <li class="nav-item"><a href="index.html" class="nav-link">Beranda</a></li>
+          <li class="nav-item"><a href="profil.html" class="nav-link active">Profil</a></li>
+          <li class="nav-item"><a href="visi-misi.html" class="nav-link">Visi & Misi</a></li>
+          <li class="nav-item"><a href="kurikulum.html" class="nav-link">Kurikulum</a></li>
+          <li class="nav-item"><a href="kontak.html" class="nav-link">Kontak</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Profil Section -->
+  <section class="container py-5">
+    <h2 class="text-center fw-bold mb-4">Profil Sekolah</h2>
+
+    <!-- Foto sekolah di tengah -->
+    <div class="profil-foto">
+      <img src="https://cdn-sekolah.annibuku.com/20251954/2.jpg" alt="Foto Sekolah SDN Sukamukti">
+    </div>
+
+    <!-- Deskripsi di bawah foto -->
+    <div class="col-md-10 mx-auto">
+      <p>
+        SD atau Sekolah Dasar Negeri Sukamukti merupakan sebuah sekolah dasar dengan status negeri yang beralamat di Dusun Cilutung, Desa Kertamukti, Kecamatan Tanjungmedar. SD Negeri Sukamukti berada di bawah naungan Kementerian Pendidikan dan Kebudayaan.
+      </p>
+      <p>
+        SD Negeri Sukamukti merupakan salah satu dari dua sekolah dasar yang berlokasi di Desa Kertamukti. Lokasinya berada di sisi timur lapangan sepak bola Kertamukti, dan tidak jauh dari pusat pemerintahan desa. Jarak dari kantor Desa Kertamukti sekitar 250 meter ke arah barat. Suasana lingkungan sekolah masih asri dan sejuk, dikelilingi oleh perkampungan dan lahan pertanian, jauh dari keramaian perkotaan.
+      </p>
+    </div>
+  </section>
+
+  <!-- Data Umum -->
+  <section class="bg-light py-5">
+    <div class="container">
+      <h4 class="text-center fw-bold mb-4">Data Umum Sekolah</h4>
+      <table class="table table-bordered align-middle text-center">
+        <tbody>
+          <tr><th>Nama Sekolah</th><td>SD Negeri Sukamukti</td></tr>
+          <tr><th>NSS</th><td>1010210210210003</td></tr>
+          <tr><th>NPSN</th><td>11111111</td></tr>
+          <tr><th>Alamat</th><td>Dusun Cilutung, Desa Kertamukti, Kecamatan Tanjungmedar, Kabupaten Sumedang, Jawa Barat</td></tr>
+          <tr><th>Tahun Berdiri</th><td>1965</td></tr>
+          <tr><th>Kepala Sekolah</th><td>KARDIA, S.Pd.SD</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 SD Negeri Sukamukti | Profil Sekolah</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
