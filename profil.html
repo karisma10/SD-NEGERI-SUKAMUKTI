@@ -3,16 +3,36 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Profil Sekolah | SD Negeri Sukamukti</title>
+  <title>SD Negeri Sukamukti | Beranda</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
+   .navbar-brand img {
+  width: 35px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.navbar-nav .nav-link {
+  font-weight: 400;
+  letter-spacing: 0.3px;
+  text-transform: capitalize;
+  padding: 10px 15px;
+  color: #fff !important;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+
     footer {
       background: #003366;
       color: white;
-      height: 70px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      padding: 15px;
+      text-align: center;
     }
     p {
       text-align: justify;
@@ -50,27 +70,28 @@
 </head>
 <body>
 
-  <!-- Navbar dengan Logo -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-    <div class="container">
-      <a class="navbar-brand fw-bold d-flex align-items-center" href="index.html">
-        <img src="img/logo tut wuri.png" alt="Logo Tut Wuri Handayani">
-        SD Negeri Sukamukti
-      </a>
-      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="nav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a href="index.html" class="nav-link">Beranda</a></li>
-          <li class="nav-item"><a href="profil.html" class="nav-link active">Profil</a></li>
-          <li class="nav-item"><a href="visi-misi.html" class="nav-link">Visi & Misi</a></li>
-          <li class="nav-item"><a href="kurikulum.html" class="nav-link">Kurikulum</a></li>
-          <li class="nav-item"><a href="kontak.html" class="nav-link">Kontak</a></li>
-        </ul>
-      </div>
+  <!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <div class="container">
+    <a class="navbar-brand fw-bold d-flex align-items-center" href="index.html">
+      <img src="img/logo tut wuri.png" alt="Logo Tut Wuri Handayani" width="35" class="me-2">
+      SD Negeri Sukamukti
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="nav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a href="index.html" class="nav-link">Beranda</a></li>
+        <li class="nav-item"><a href="profil.html" class="nav-link active">Profil</a></li>
+        <li class="nav-item"><a href="visi-misi.html" class="nav-link">Visi & Misi</a></li>
+        <li class="nav-item"><a href="kurikulum.html" class="nav-link">Kurikulum</a></li>
+        <li class="nav-item"><a href="kontak.html" class="nav-link">Kontak</a></li>
+      </ul>
     </div>
-  </nav>
+  </div>
+</nav>
+
 
   <!-- Profil Sekolah -->
   <section class="container py-5">
