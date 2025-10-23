@@ -6,73 +6,6 @@
   <title>Profil Sekolah | SD Negeri Sukamukti</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
-    body {
-      background-color: #f9f9f9;
-    }
-
-    /* Rapiin teks navbar */
-    .navbar-nav .nav-link {
-      font-weight: 500;
-      letter-spacing: 0.3px;
-      text-transform: capitalize;
-      padding: 10px 15px;
-      color: #fff !important;
-    }
-
-    .navbar-nav .nav-link:hover,
-    .navbar-nav .nav-link.active {
-      background-color: rgba(255, 255, 255, 0.2);
-      border-radius: 8px;
-      transition: 0.3s;
-    }
-
-    p {
-      text-align: justify;
-      line-height: 1.8;
-      margin-bottom: 15px;
-    }
-
-    /* Tabel agar kolomnya sama besar dan rapi */
-    table {
-      table-layout: fixed;
-      width: 100%;
-    }
-
-    th, td {
-      width: 50%;
-      text-align: center;
-      vertical-align: middle;
-      word-wrap: break-word;
-    }
-
-    th {
-      background-color: #003366;
-      color: white;
-    }
-
-    /* Foto di tengah dan ukuran lebih kecil */
-    .profil-foto {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-bottom: 30px;
-    }
-
-    .profil-foto img {
-      width: 50%;
-      max-width: 500px;
-      height: auto;
-      border-radius: 15px;
-      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-
-    .profil-foto img:hover {
-      transform: scale(1.03);
-      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-    }
-
-    /* Footer di tengah sempurna */
     footer {
       background: #003366;
       color: white;
@@ -81,14 +14,28 @@
       align-items: center;
       justify-content: center;
     }
-
-    footer p {
-      margin: 0;
-      font-size: 15px;
-      letter-spacing: 0.3px;
+    p {
+      text-align: justify;
+      line-height: 1.8;
+      margin-bottom: 15px;
     }
-
-    /* Responsif: kalau di HP, foto otomatis lebih lebar sedikit */
+    .profil-foto {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 30px;
+    }
+    .profil-foto img {
+      width: 50%;
+      max-width: 500px;
+      border-radius: 15px;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .profil-foto img:hover {
+      transform: scale(1.03);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    }
     @media (max-width: 768px) {
       .profil-foto img {
         width: 80%;
@@ -97,14 +44,15 @@
   </style>
 </head>
 <body>
+
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
     <div class="container">
-      <a class="navbar-brand fw-bold text-uppercase" href="index.html">SD Negeri Sukamukti</a>
+      <a class="navbar-brand fw-bold" href="index.html">SD Negeri Sukamukti</a>
       <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse justify-content-end" id="nav">
+      <div class="collapse navbar-collapse" id="nav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a href="index.html" class="nav-link">Beranda</a></li>
           <li class="nav-item"><a href="profil.html" class="nav-link active">Profil</a></li>
@@ -116,17 +64,13 @@
     </div>
   </nav>
 
-  <!-- Profil Section -->
+  <!-- Profil Sekolah -->
   <section class="container py-5">
     <h2 class="text-center fw-bold mb-4">Profil Sekolah</h2>
-
-    <!-- Foto sekolah di tengah -->
-    <div class="profil-foto">
-      <img src="https://cdn-sekolah.annibuku.com/20251954/2.jpg" alt="Foto Sekolah SDN Sukamukti">
-    </div>
-
-    <!-- Deskripsi di bawah foto -->
-    <div class="col-md-10 mx-auto">
+    <div class="card shadow-sm p-4">
+      <div class="profil-foto">
+        <img src="https://cdn-sekolah.annibuku.com/20251954/2.jpg" alt="Foto Sekolah SDN Sukamukti">
+      </div>
       <p>
         SD atau Sekolah Dasar Negeri Sukamukti merupakan sebuah sekolah dasar dengan status negeri yang beralamat di Dusun Cilutung, Desa Kertamukti, Kecamatan Tanjungmedar. SD Negeri Sukamukti berada di bawah naungan Kementerian Pendidikan dan Kebudayaan.
       </p>
@@ -137,10 +81,10 @@
   </section>
 
   <!-- Data Umum -->
-  <section class="bg-light py-5">
-    <div class="container">
-      <h4 class="text-center fw-bold mb-4">Data Umum Sekolah</h4>
-      <table class="table table-bordered align-middle text-center">
+  <section class="container py-4">
+    <h4 class="text-center fw-bold mb-4">Data Umum Sekolah</h4>
+    <div class="card shadow-sm p-4">
+      <table class="table table-bordered align-middle text-center mb-0">
         <tbody>
           <tr><th>Nama Sekolah</th><td>SD Negeri Sukamukti</td></tr>
           <tr><th>NSS</th><td>1010210210210003</td></tr>
